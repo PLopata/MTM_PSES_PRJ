@@ -1,0 +1,7 @@
+https://www.autosar.org/fileadmin/standards/classic/22-11/AUTOSAR_SRS_LIN.pdf
+https://www.autosar.org/fileadmin/standards/classic/4-4-0/AUTOSAR_SRS_NetworkManagement.pdf
+https://www.autosar.org/fileadmin/standards/classic/22-11/AUTOSAR_SRS_SPALGeneral.pdf
+https://www.autosar.org/fileadmin/standards/classic/4-4-0/AUTOSAR_SWS_BSWGeneral.pdf
+https://www.autosar.org/fileadmin/standards/classic/22-11/AUTOSAR_SWS_LINInterface.pdf
+https://www.autosar.org/fileadmin/standards/classic/4-4-0/AUTOSAR_SWS_LINNetworkManagement.pdf
+https://www.autosar.org/fileadmin/standards/classic/4-4-0/AUTOSAR_SWS_NetworkManagementInterface.pdf
