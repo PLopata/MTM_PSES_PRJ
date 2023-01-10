@@ -4,4 +4,4 @@
 #include "./Std_Types.h"
 #include "./ComStack_Cfg.h"
 
-#endif
+#endif /* COM_STACK_TYPES_H */
