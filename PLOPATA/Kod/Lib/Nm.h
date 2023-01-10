@@ -1,6 +1,11 @@
 #ifndef NM_H
 #define NM_H
 
+/*
+Jeden z plików jaki jest wymagany przez LinNm
+ale nie znalazłem jego gotowej implementacji online
+*/
+
 /// @brief 
 typedef struct
 {
