@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "nm.h": "c"
+        "nm.h": "c",
+        "std_types.h": "c",
+        "comstacktypes.h": "c"
     }
 }

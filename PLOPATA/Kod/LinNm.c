@@ -103,9 +103,7 @@ void LinNm_GetVersionInfo(Std_VersionInfoType* versioninfo)
 
 /**
   @brief LinNm_RequestBusSynchronization 
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications. Request bus 
-  synchronization.
+  Funkcja ma pozostać pusta
   @param nmChannelHandle
   @note Realizacja wymagań:
   [SWS_LinNm_00089],
@@ -123,8 +121,7 @@ Std_ReturnType LinNm_RequestBusSynchronization(NetworkHandleType nmChannelHandle
 
 /**
   @brief LinNm_CheckRemoteSleepIndication
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta
   @param nmChannelHandle,nmRemoteSleepIndPtr
   @note Realizacja wymagań:
   [SWS_LinNm_00092],
@@ -142,8 +139,7 @@ Std_ReturnType LinNm_CheckRemoteSleepIndication(NetworkHandleType nmChannelHandl
 
 /**
   @brief LinNm_SetSleepReadyBit
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be compliant with NM specifications
+  Funkcja ma pozostać pusta
   @param nmChannelHandle,nmSleepReadyBit
   @note Realizacja wymagań:
   [SWS_LinNm_00175],
@@ -160,8 +156,7 @@ Std_ReturnType LinNm_SetSleepReadyBit(NetworkHandleType nmChannelHandle, boolean
 
 /**
   @brief LinNm_DisableCommunication
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta
   @param NetworkHandle
   @note Realizacja wymagań:
   [SWS_LinNm_00108],
@@ -178,8 +173,7 @@ Std_ReturnType LinNm_DisableCommunication(NetworkHandleType NetworkHandle)
 
 /**
   @brief LinNm_EnableCommunication
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta
   @param NetworkHandle
   @note Realizacja wymagań:
   [SWS_LinNm_00111],
@@ -196,8 +190,7 @@ Std_ReturnType LinNm_EnableCommunication(NetworkHandleType NetworkHandle)
 
 /**
   @brief LinNm_SetUserData
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta.
   @param NetworkHandle,nmUserDataPtr
   @note Realizacja wymagań:
   [SWS_LinNm_00114],
@@ -214,8 +207,7 @@ Std_ReturnType LinNm_SetUserData(NetworkHandleType NetworkHandle, const uint8* n
 
 /**
   @brief LinNm_GetUserData
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta
   @param NetworkHandle,nmUserDataPtr
   @note Realizacja wymagań:
   [SWS_LinNm_00117],
@@ -232,8 +224,7 @@ Std_ReturnType LinNm_GetUserData(NetworkHandleType NetworkHandle, uint8* nmUserD
 
 /**
   @brief LinNm_GetPduData
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta
   @param NetworkHandle,nmPduData
   @note Realizacja wymagań:
   [SWS_LinNm_00120],
@@ -250,8 +241,7 @@ Std_ReturnType LinNm_GetPduData(NetworkHandleType NetworkHandle, uint8* nmPduDat
 
 /**
   @brief LinNm_RepeatMessageRequest
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta
   @param NetworkHandle
   @note Realizacja wymagań:
   [SWS_LinNm_00123],
@@ -268,8 +258,7 @@ Std_ReturnType LinNm_RepeatMessageRequest(NetworkHandleType NetworkHandle)
 
 /**
   @brief LinNm_GetNodeIdentifier
-  TODO: Co to właściwie znaczy funkcja ma zostać pusta?
-  Empty function to be complaint with NM specifications.
+  Funkcja ma pozostać pusta
   @param NetworkHandle,nmNodeIdPtr
   @note Realizacja wymagań:
   [SWS_LinNm_00126],
