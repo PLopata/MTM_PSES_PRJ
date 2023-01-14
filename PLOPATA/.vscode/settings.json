@@ -2,6 +2,7 @@
     "files.associations": {
         "nm.h": "c",
         "std_types.h": "c",
-        "comstacktypes.h": "c"
+        "comstacktypes.h": "c",
+        "nmstack_types.h": "c"
     }
 }

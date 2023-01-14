@@ -1,66 +1,58 @@
 #ifndef NM_H
 #define NM_H
 
-/*
-Jeden z plików jaki jest wymagany przez LinNm
-ale nie znalazłem jego gotowej implementacji online
-*/
-
-/// @brief 
-typedef struct
-{
-    /// TODO: unknown type
-    char a;
-    int  b;
-    
-} NetworkHandleType;
-
-/// @brief 
-typedef struct
-{
-    /// TODO: unknown type
-    char a;
-    int  b;
-} Nm_StateType;
+#include "Std_Types.h"
+#include "NmStack_Types.h"
 
 
-/// @brief 
-typedef struct 
-{
-    /// TODO: unknown type
-    char a;
-    int  b;
-} Nm_ModeType;
+/**
+ * @brief Notification that the network management has entered Bus-Sleep Mode
+ * 
+ * [SWS_Nm_00162] 
+ */
+void Nm_BusSleepMode(NetworkHandleType nmNetworkHandleType);
 
 
-/// @brief 
-typedef struct
-{
-    /// TODO: unknown type
-    char a;
-    int  b;
-} PduIdType;
+/**
+ * @brief Notification that the network management has entered Network Mode
+ * 
+ * [SWS_Nm_00156] 
+ */
+void Nm_NetworkMode(NetworkHandleType nmNetworkHandle);
 
 
-/// @brief 
-typedef struct
-{
-    /// TODO: unknown type
-    char a;
-    int  b;
-} PduInfoType;
+/**
+ * @brief Cancels an indication, when the NM Coordinator Sleep Ready bit in the
+ * Control Bit Vector is set back to 0
+ * 
+ * [SWS_Nm_00272] 
+ */
+void Nm_CoordReadyToSleepCancellation(NetworkHandleType nmChannelHandle);
 
 
+/**
+ * @brief Sets an indication, when the NM Coordinator Sleep Ready bit in the 
+ * Control Bit Vector is set
+ * 
+ * [SWS_Nm_00254] 
+ */
+void Nm_CoordReadyToSleepIndication(NetworkHandleType nmChannelHandle);
 
-///TODO: define required interfaces
-void Nm_BusSleepMode(void);
-void Nm_NetworkMode(void);
 
-///TODO: define optional interfaces
-void Nm_CoordReadyToSleepCancellation(void);
-void Nm_CoordReadyToSleepIndication(void);
-void Nm_RemoteSleepIndication(void);
-void Nm_StateChangeNotification(void);
+/**
+ * @brief Notification that the network management has detected that all other
+ * nodes on the network are ready to enter Bus-Sleep Mode.
+ * 
+ * [SWS_Nm_00192] 
+ */
+void Nm_RemoteSleepIndication(NetworkHandleType nmNetworkHandle);
 
+
+/**
+ * @brief Notification that the state of the lower layer <BusNm> has changed.
+ * 
+ * [SWS_Nm_00114] 
+ */
+void Nm_StateChangeNotification(NetworkHandleType nmNetworkHandle, Nm_StateType nmPreviousState, Nm_StateType nmCurrentState);
 
 #endif /* NM_H */
