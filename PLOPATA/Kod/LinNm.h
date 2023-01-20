@@ -18,16 +18,37 @@
 #include "./Lib/Nm.h"
 
 /*====================================================================================================================*\
+    Makra globalne
+\*====================================================================================================================*/
+#ifndef LINNM_CHANNEL_COUNT
+#define LINNM_CHANNEL_COUNT 1
+#endif
+
+/*====================================================================================================================*\
     API
 \*====================================================================================================================*/
+typedef struct
+{
+  boolean             NodeDetectionEnabled;
+  boolean             NodeIdEnabled;
+  float32             TimeoutTime;
+  NetworkHandleType   ComMNetworkHandleRef;
+} LinNm_ChannelType;
+
 /* [SWS_LinNm_00172] */
 typedef struct 
 {
-  /// TODO: unknown type
-  char a;
-  int  b;
+  boolean             BusSynchronizationEnabled;
+  boolean             RemoteSleepIndicationEnabled;
+  boolean             UserDataEnabled;
+  boolean             StateChangeIndEnabled;
+  boolean             ComControlEnabled;
+  boolean             PassiveModeEnabled;
+  boolean             SynchronizationPointEnabled;
+  boolean             CoordinatorSyncSupport;
+  float32             MainFunctionPeriod;
+  LinNm_ChannelType*  ChannelConfig[LINNM_CHANNEL_COUNT];
 } LinNm_ConfigType;
-
 
 /* [SWS_LinNm_00054] */
 void LinNm_Init(const LinNm_ConfigType* ConfigPtr);
